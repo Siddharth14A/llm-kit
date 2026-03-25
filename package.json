@@ -1,0 +1,50 @@
+{
+  "name": "@siddharth-aylapuram/llm-kit",
+  "version": "0.1.0",
+  "description": "Production-ready LLM infrastructure with a tiny API.",
+  "type": "module",
+  "license": "MIT",
+  "packageManager": "npm@10.8.2",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "llm",
+    "openai",
+    "gemini",
+    "ollama",
+    "streaming",
+    "json",
+    "typescript",
+    "node",
+    "ai"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.2"
+  }
+}
